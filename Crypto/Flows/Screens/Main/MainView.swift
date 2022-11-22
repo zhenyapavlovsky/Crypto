@@ -12,7 +12,7 @@ struct MainView: View {
         ZStack {
             Color("MainListColor")
             .ignoresSafeArea()
-            Text("TEst")
+
             VStack {
                 HStack {
                 Text("Crypto")

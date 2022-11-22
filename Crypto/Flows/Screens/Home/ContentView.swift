@@ -13,31 +13,27 @@ struct ContentView: View {
     @State private var animation = false
     
     var body: some View {
-        ZStack {
-            Image("HomeBackgroun")
-                .ignoresSafeArea()
-            
-            VStack(alignment: .center, spacing: 5) {
-                    Text("Welcome")
-                        .foregroundColor(.white)
-                        .font(.system(size: 45))
-                        .fontWeight(.heavy)
-
-                    Text("To the Crypto")
-                        .foregroundColor(.white)
-                        .font(.system(size: 35))
-                        .fontWeight(.bold)
-                        
+        VStack {
+            VStack {
+                Text("Welcome")
+                    .foregroundColor(.white)
+                    .font(.system(size: 45))
+                    .fontWeight(.heavy)
+                
+                Text("To the Crypto")
+                    .foregroundColor(.white)
+                    .font(.system(size: 35))
+                    .fontWeight(.bold)
             }
-            
-            .padding(.bottom, 600)
+            .padding(.top, 25)
             .opacity(animate ? 1.0 : 0.0)
             .onAppear() {
                 withAnimation(Animation.easeInOut(duration: 1.0)) {animate.toggle()}
             }
             
+            Spacer()
             
-            HStack{
+            VStack {
                 Button(action: {}, label: {
                     Text("Let's start!")
                         .fontWeight(.bold)
@@ -47,14 +43,17 @@ struct ContentView: View {
                 })
                 .background(Color("MainToolBarColor"))
                 .cornerRadius(10)
-                .padding(.top, 680)
             }
+            .padding(.bottom, 30)
             .opacity(animation ? 1.0 : 0.0)
             .onAppear() {
                 withAnimation(Animation.easeInOut(duration: 2.0)) {animation.toggle()}
             }
             
-        }
+        } .background(
+            Image("HomeBackgroun")
+                .ignoresSafeArea()
+        )
     }
 }
 

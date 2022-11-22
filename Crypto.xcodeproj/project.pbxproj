@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		988DD7812923292C004BB93C /* TEst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988DD7802923292C004BB93C /* TEst.swift */; };
 		9891F1B9291C562100443CE5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891F1B8291C562100443CE5 /* MainView.swift */; };
 		98F63B922919732D00DFCBB8 /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F63B912919732D00DFCBB8 /* CryptoApp.swift */; };
 		98F63B942919732D00DFCBB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F63B932919732D00DFCBB8 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		988DD7802923292C004BB93C /* TEst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEst.swift; sourceTree = "<group>"; };
 		9891F1B8291C562100443CE5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		98F63B8E2919732D00DFCBB8 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F63B912919732D00DFCBB8 /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				9891F1B8291C562100443CE5 /* MainView.swift */,
+				988DD7802923292C004BB93C /* TEst.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				98F63BCE291B181600DFCBB8 /* SettingView.swift in Sources */,
 				9891F1B9291C562100443CE5 /* MainView.swift in Sources */,
 				98F63BC72919C98C00DFCBB8 /* Coins.swift in Sources */,
+				988DD7812923292C004BB93C /* TEst.swift in Sources */,
 				98F63B922919732D00DFCBB8 /* CryptoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
